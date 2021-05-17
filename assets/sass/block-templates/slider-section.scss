@@ -1,0 +1,25 @@
+.slider {
+  .slider-image {
+    height: 80vh;
+    @include backgroundImg(cover);
+  }
+
+  .slick-dots li.slick-active button:before,
+  .slick-dots li button:before {
+    opacity: 0;
+  }
+}
+
+.slick-active {
+  .animation-left {
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
+    opacity: 1;
+  }
+
+  .animation-right {
+    animation-name: fadeInRight;
+    animation-duration: 2s;
+    opacity: 1;
+  }
+}
