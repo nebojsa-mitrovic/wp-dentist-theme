@@ -6,20 +6,11 @@
  * @package wp-dentist-theme
  */
 
-// Logo
 $banner = get_field('banner');
 $banner_sized = $banner['sizes']['full'];
-
-// Address
-$address = get_field('address');
-
-// Email
-$email = get_field('email');
-
-// Phone
-$phone = get_field('phone');
+$banner_text = get_field('banner_text');
 ?>
 
 <banner class=" banner pb-bg-image" style="background-image: url(<?php echo $banner_sized ?>);">
-  <h1>Some Text</h1>
+  <h1><?php echo $banner_text ?></h1>
 </banner>
