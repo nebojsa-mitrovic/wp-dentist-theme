@@ -1,0 +1,58 @@
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: -5rem;
+  height: 1rem;
+  width: 2.5rem;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: transparent;
+  opacity: 0.5;
+  visibility: hidden;
+  text-align: center;
+  @include transition(all, 0.3s, ease-in-out);
+  background-color: $primary-color-lighter;
+
+  @include media-breakpoint-down(md) {
+    right: 1rem;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    outline: none;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 1.25rem solid transparent;
+    border-top: 0;
+  }
+
+  &:before {
+    top: -1.25rem;
+    border-bottom: 1.25rem solid $primary-color-lighter;
+  }
+
+  &:after {
+    bottom: 0;
+    border-bottom: 1.25rem solid $primary-color;
+  }
+
+  &:hover,
+  &:focus {
+    height: 2.5rem;
+    color: $primary-color-darker;
+  }
+}
+
+.show-back-to-top {
+  display: block;
+  bottom: 1.5rem;
+  visibility: visible;
+}

@@ -1,0 +1,20 @@
+.pb-bg-image {
+  @include backgroundImg(cover);
+
+  .pb-headline {
+    color: $white;
+  }
+}
+
+.pb-headline {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+// Class that will position all elements center horizontaly and vertically
+.pb-center-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,51 @@
+//background image mixin
+@mixin backgroundImg($size) {
+  background-size: $size;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@mixin image($objectFit) {
+  picture {
+    height: 100%;
+  }
+
+  img {
+    height: 100%;
+    object-fit: $objectFit;
+  }
+}
+
+@mixin transition($what: all, $time: 0.5s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition: $what $time $how;
+  -ms-transition: $what $time $how;
+  -o-transition: $what $time $how;
+  transition: $what $time $how;
+}
+
+@mixin no-user-select() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin word-wrap() {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+@mixin rotatingText($degree) {
+  -webkit-transform: rotate($degree);
+  -moz-transform: rotate($degree);
+  -ms-transform: rotate($degree);
+  -o-transform: rotate($degree);
+}

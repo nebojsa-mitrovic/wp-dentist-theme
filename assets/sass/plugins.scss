@@ -1,0 +1,11 @@
+//GDPR Cookie Consent
+.cookies {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 50px;
+
+  &__text {
+    display: flex;
+    align-items: center;
+  }
+}

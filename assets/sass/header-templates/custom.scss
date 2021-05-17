@@ -1,0 +1,24 @@
+//Anchor that is not acting as a link
+.menu-not-link {
+
+  a {
+    cursor: context-menu;
+    pointer-events: none;
+
+    @media (hover: none) and (pointer: coarse) {
+      pointer-events: auto;
+    }
+
+    @media (hover: none) and (pointer: fine) {
+      pointer-events: auto;
+    }
+  }
+
+  li {
+
+    a {
+      cursor: pointer;
+      pointer-events: auto;
+    }
+  }
+}

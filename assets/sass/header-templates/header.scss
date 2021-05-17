@@ -1,0 +1,287 @@
+.website-info-header {
+  height: $menu-height;
+  background: $white;
+  width: 100%;
+  z-index: 10;
+  @include transition();
+
+  &.sticky {
+    height: $menu-sticky-height;
+    position: fixed;
+  }
+}
+
+.website-info-header-top {
+  border-bottom: 1px solid $primary-color;
+
+  @include media-breakpoint-down(sm) {
+    height: initial;
+    padding: 20px 0;
+  }
+
+  &__content {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: $white;
+
+    div {
+      padding-bottom: 10px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.2em;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 1em;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 0.8em;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 1.2em;
+      }
+    }
+
+    i {
+      margin-right: 0.6rem;
+    }
+
+    .btn-basic {
+      font-size: 0.8em;
+      padding: 0.6rem;
+    }
+
+    .row {
+      height: 100%;
+    }
+  }
+
+  &__logo {
+    @include media-breakpoint-down(md) {
+      flex: initial;
+    }
+
+    img {
+      height: 50px;
+      object-fit: contain;
+    }
+  }
+
+  &.sticky {
+    @include media-breakpoint-down(sm) {
+      height: 220px;
+    }
+
+    img {
+      height: 35px;
+      @include transition();
+    }
+  }
+}
+
+.website-info-header-bottom {
+  display: flex;
+  border-bottom: 2px solid $primary-color;
+
+  .navbar-toggler {
+    @include transition();
+  }
+
+  #navbar {
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+    }
+  }
+
+  nav {
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    text-align: right;
+
+    button {
+      margin-right: 15px;
+      margin-top: 20px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    @include media-breakpoint-down(md) {
+      flex: initial;
+      display: block;
+    }
+
+    img {
+      height: 50px;
+      object-fit: contain;
+      @include transition();
+
+      @include media-breakpoint-down(sm) {
+        height: 40px;
+        width: 70%;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex: 3;
+    width: 100%;
+
+    @include media-breakpoint-down(md) {
+      flex: initial;
+    }
+
+    .menu-main-navigation-container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      @include media-breakpoint-down(md) {
+        height: initial;
+      }
+    }
+
+    .main-menu {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin: 0;
+
+      @include media-breakpoint-down(md) {
+        background: $white;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid $lighter-gray;
+        margin-bottom: -1rem;
+      }
+
+      li {
+        height: 100%;
+        @include transition(all, 0.3s, ease-in-out);
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          border-bottom: 1px solid $lighter-gray;
+        }
+
+        a {
+          display: flex;
+          font-size: 1.2em;
+          padding: 0 1.5rem;
+          height: 100%;
+          width: 100%;
+          align-items: center;
+
+          @include media-breakpoint-down(md) {
+            height: 40px;
+          }
+        }
+
+        &:hover {
+          background-color: $primary-color;
+        }
+
+        .sub-menu {
+          display: none;
+          z-index: 10;
+        }
+
+        &:hover {
+          & > a {
+            color: $white;
+          }
+
+          .sub-menu {
+            display: block;
+            position: absolute;
+            background: $lightest-gray;
+            border-bottom: 2px solid $primary-color;
+            @include transition(all, 0.3s, ease-in-out);
+
+            li {
+              height: $menu-height;
+
+              @include media-breakpoint-down(md) {
+                height: 40px;
+              }
+            }
+
+            @include media-breakpoint-down(md) {
+              display: none;
+            }
+          }
+
+          .sub-menu-open {
+            @include media-breakpoint-down(md) {
+              display: block;
+              position: relative;
+              width: 100%;
+            }
+          }
+        }
+
+        a {
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &.sticky {
+    top: $menu-sticky-height;
+
+    @include media-breakpoint-down(sm) {
+      top: 220px;
+    }
+
+    img {
+      height: 35px;
+      @include transition();
+    }
+
+    .navbar-toggler {
+      font-size: 0.8em;
+      @include transition();
+    }
+
+    button {
+      margin-right: 15px;
+    }
+
+    .main-menu {
+      li {
+        &:hover {
+          .sub-menu {
+            li {
+              height: $menu-sticky-height;
+
+              @include media-breakpoint-down(md) {
+                height: 30px;
+              }
+            }
+          }
+        }
+
+        a {
+          @include media-breakpoint-down(md) {
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

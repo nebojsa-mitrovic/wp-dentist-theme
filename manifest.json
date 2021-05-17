@@ -1,0 +1,86 @@
+{
+  "projectname": "wp-dentist-theme",
+  "version": "1.0.0",
+
+  "developmentURL": "localhost",
+
+  "npm_dependencies": {
+    "js": [
+      "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/bootstrap/dist/js/bootstrap.js",
+      "node_modules/aos/dist/aos.js",
+      "node_modules/popper.js/dist/umd/popper.min.js",
+      "node_modules/slick-carousel/slick/slick.js"
+    ],
+    "css": [
+      "node_modules/slick-carousel/slick/slick.css",
+      "node_modules/slick-carousel/slick/slick-theme.css",
+      "node_modules/aos/dist/aos.css"
+    ],
+    "exclude": [],
+    "dependencies": {
+    }
+  },
+
+  "linting": {
+    "css": {
+      "important": true,
+      "adjoining-classes": false
+    },
+    "js": {
+      "browser":   true,
+      "camelcase": true,
+      "curly":     true,
+      "eqeqeq":    true,
+      "indent":    2,
+      "strict":    true,
+      "undef":     true,
+      "globals": {
+        "$": false,
+        "jQuery": false
+      }
+    }
+  },
+
+  "ftp": {
+    "src":      ".",
+    "live": {
+      "host":     "",
+      "port":     21,
+      "dest":     ""
+    },
+    "stage": {
+      "host":     "",
+      "port":     22,
+      "dest":     ""
+    },
+    "exclude": [
+      ".sass-cache",
+      "./assets/sass",
+      ".git",
+      "node_modules",
+      "acf-json",
+      ".gitignore",
+      "readme.md",
+      "readme.txt",
+      "Gruntfile.js",
+      ".DS_Store",
+      "._*",
+      "Spotlight-V100",
+      ".Trashes",
+      "Thumbs.db",
+      "npm-debug.log",
+      ".settings",
+      "nbproject",
+      "package.json",
+      "package-lock.json",
+      "docs",
+      ".editorconfig",
+      "manifest.json",
+      "*.map",
+      "*.gitkeep",
+      "plugins.txt",
+			".ftppass"
+    ]
+  }
+}
