@@ -8,23 +8,21 @@
  * @package wp-dentist-theme
  */
 
-$size = 'medium';
-
 // Logo
-$logo = get_field('website_logo', 'options');
-$logo_sized = $logo['sizes'][$size];
+$logo = get_field('website_logo');
+$logo_sized = $logo['sizes']['medium'];
 $logo_alt = $logo['alt'];
 $logo_title = $logo['title'];
 $logo_description = $logo['description'];
 
 // Address
-$address = get_field('address', 'options');
+$address = get_field('address');
 
 // Email
-$email = get_field('email', 'options');
+$email = get_field('email');
 
 // Phone
-$phone = get_field('phone', 'options');
+$phone = get_field('phone');
 ?>
 
 <!DOCTYPE html>

@@ -10,8 +10,7 @@
 
 get_header(); ?>
 
-
-<h1>Test</h1>
+<?php get_template_part('block-templates/banner'); ?>
 
 
 <?php get_footer(); ?>
