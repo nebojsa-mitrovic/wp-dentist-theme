@@ -1,0 +1,30 @@
+.welcome-section {
+  height: 80vh;
+
+  .letter {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 760px;
+    padding: 80px;
+    @include backgroundImg(cover);
+    box-shadow: 0 5px 8px 0 $light-gray;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .signature {
+    font-family: "Mrs Saint Delafield", cursive;
+    font-size: 2em;
+    margin-top: 20px;
+  }
+
+  .dentist-image {
+    position: absolute;
+    top: -50px;
+    right: 60px;
+    width: 170px;
+    border: 4px solid $white;
+    border-radius: 50%;
+  }
+}
