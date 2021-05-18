@@ -92,3 +92,12 @@ foreach ($libs as $file) {
     trigger_error('Failed to load library (' . $file . ')', E_USER_ERROR);
   }
 }
+
+function upload_svg_files($allowed)
+{
+  if (!current_user_can('manage_options'))
+    return $allowed;
+  $allowed['svg'] = 'image/svg+xml';
+  return $allowed;
+}
+add_filter('upload_mimes', 'upload_svg_files');
