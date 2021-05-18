@@ -1,0 +1,19 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(5, 5fr);
+  gap: 1rem;
+  margin: auto;
+  max-width: 1500px;
+
+  .box {
+    text-align: center;
+
+    h2 {
+      margin: 10px 0 15px;
+    }
+  }
+
+  .services-image {
+    width: 150px;
+  }
+}

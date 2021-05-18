@@ -13,6 +13,7 @@ get_header(); ?>
 <?php get_template_part('block-templates/banner'); ?>
 <?php get_template_part('block-templates/welcome-section'); ?>
 <?php get_template_part('block-templates/slider-section'); ?>
+<?php get_template_part('block-templates/services-section'); ?>
 
 
 <?php get_footer(); ?>
