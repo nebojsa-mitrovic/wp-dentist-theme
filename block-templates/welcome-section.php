@@ -7,11 +7,11 @@
  */
 
 //  Dentist photo
-$dentist_image = get_field('dentist_image');
-$dentist_image_sized = $dentist_image['sizes']['medium'];
-$dentist_image_alt = $dentist_image['alt'];
-$dentist_image_title = $dentist_image['title'];
-$dentist_image_description = $dentist_image['description'];
+$welcome_image = get_field('welcome_image');
+$welcome_image_sized = $welcome_image['sizes']['medium'];
+$welcome_image_alt = $welcome_image['alt'];
+$welcome_image_title = $welcome_image['title'];
+$welcome_image_description = $welcome_image['description'];
 
 // Letter
 $letter_background = get_field('letter_background');
@@ -21,7 +21,7 @@ $welcome_message = get_field('welcome_message');
 
 <section id="willkommen" class="welcome-section pb-center-elements">
   <div class="letter" style="background-image: url(<?php echo $letter_background_sized ?>);">
-    <img src="<?php echo $dentist_image_sized ?>" class="dentist-image" alt="<?php echo $dentist_image_alt ?>" title="<?php echo $dentist_image_title ?>" description="<?php echo $dentist_image_description ?>">
+    <img src="<?php echo $welcome_image_sized ?>" class="dentist-image" alt="<?php echo $welcome_image_alt ?>" title="<?php echo $welcome_image_title ?>" description="<?php echo $welcome_image_description ?>">
     <?php echo $welcome_message ?>
   </div>
 </section>
