@@ -87,7 +87,7 @@ $services_headline_10 = get_field('services_headline_10');
 $services_text_10 = get_field('services_text_10');
 ?>
 
-<section id="leistungen" class="services">
+<section id="leistungen" class="container services">
   <div class="box">
     <img src="<?php echo $services_image_1_sized ?>" class="services-image" alt="<?php echo $services_image_1_alt ?>" title="<?php echo $services_image_1_title ?>" description="<?php echo $services_image_1_description ?>">
     <h2><?php echo $services_headline_1 ?></h2>
