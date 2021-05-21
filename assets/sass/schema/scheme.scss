@@ -15,6 +15,12 @@ body {
   font-size: 0.9em;
 }
 
+/* Container
+========================================================================== */
+.container {
+  max-width: $container-width;
+}
+
 /* links
 ========================================================================== */
 a {
@@ -49,6 +55,14 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 1.8em;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 1.5em;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -56,13 +70,6 @@ h4,
 h5,
 h6 {
   margin: 0;
-}
-
-/* Lists
-========================================================================== */
-ul {
-  list-style-type: none;
-  padding: 0;
 }
 
 /* Images
@@ -422,8 +429,8 @@ ul {
     background: linear-gradient(
       to right,
       $primary-color 30%,
-      $lightest-gray 30%,
-      $lightest-gray 100%
+      $white 30%,
+      $white 100%
     );
 
     position: relative;

@@ -9,6 +9,11 @@
     height: $menu-sticky-height;
     position: fixed;
   }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
 }
 
 .website-info-header-top {
