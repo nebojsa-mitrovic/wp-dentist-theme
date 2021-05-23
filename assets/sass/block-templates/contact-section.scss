@@ -1,0 +1,45 @@
+.contact {
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+
+  &__data {
+    background: $transparent-gray;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h3 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      font-size: 1.3em;
+      margin-bottom: 5px;
+    }
+
+    a {
+      font-size: 2em;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__phone {
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    font-size: 1.4em;
+  }
+}
