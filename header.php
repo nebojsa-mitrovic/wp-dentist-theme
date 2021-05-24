@@ -75,7 +75,7 @@ $phone = get_field('phone');
               <?php
               wp_nav_menu(array(
                 'theme_location'    => 'header-nav',
-                'depth'             => 2,
+                'depth'             => 1,
                 'menu_class'        => 'main-menu'
               ));
               ?>

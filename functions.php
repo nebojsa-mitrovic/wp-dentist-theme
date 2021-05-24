@@ -38,6 +38,8 @@ $plugin_dependencies = [];
  */
 $theme_menues = [
   'header-nav' => 'Main Navigation',
+  'footer-nav' => 'Footer Navigation',
+  'legal-nav' => 'Legal Navigation',
 ];
 
 
