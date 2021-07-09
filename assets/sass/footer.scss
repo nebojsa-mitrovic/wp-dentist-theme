@@ -9,15 +9,13 @@
   }
 
   &__sub {
-    background: $primary-color;
+    background: $white;
+    border-bottom: 2px solid $primary-color;
     padding: 1rem 0;
-
-    a:hover {
-      color: $white;
-    }
 
     i {
       margin-right: 0.6rem;
+      color: $primary-color;
     }
   }
 

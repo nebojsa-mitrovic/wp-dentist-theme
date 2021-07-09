@@ -7,4 +7,5 @@
   height: 90vh;
   padding: 150px;
   @include backgroundImg(cover);
+  color: $primary-color;
 }

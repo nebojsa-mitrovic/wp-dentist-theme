@@ -11,7 +11,9 @@
   }
 
   &__promises {
-    background-color: $primary-color;
+    background-color: $white;
+    color: $primary-color;
+    border: 5px solid $primary-color;
     padding: 80px 150px;
 
     h3 {

@@ -1,6 +1,7 @@
 .contact {
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 150px 0;
 
   &__data {
@@ -41,5 +42,11 @@
 
   &__address {
     font-size: 1.4em;
+  }
+
+  &__form {
+    .wpcf7-submit {
+      border: 1px solid $white !important;
+    }
   }
 }
