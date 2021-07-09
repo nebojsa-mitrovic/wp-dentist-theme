@@ -42,8 +42,6 @@ $phone = get_field('phone');
 
 <body <?php body_class(); ?>>
 
-  <a href="#" class="back-to-top"><?php _e('TOP', 'wp-dentist-theme'); ?></a>
-
   <header>
     <div class="website-header">
       <div class="website-info-header website-info-header-top">
