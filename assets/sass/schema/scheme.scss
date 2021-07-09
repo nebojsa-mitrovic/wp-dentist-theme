@@ -24,11 +24,11 @@ body {
 /* links
 ========================================================================== */
 a {
-  color: $body-color;
+  color: $primary-color;
   @include transition();
 
   &:hover {
-    color: $primary-color;
+    color: $primary-color-lighter;
     text-decoration: none;
   }
 
@@ -409,7 +409,7 @@ h6 {
   }
 
   li.slick-active button {
-    background-color: $secondary-color !important;
+    background-color: $primary-color-lighter !important;
   }
 }
 
