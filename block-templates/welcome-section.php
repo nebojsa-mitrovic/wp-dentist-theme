@@ -22,6 +22,8 @@ $welcome_message = get_field('welcome_message');
 <section id="willkommen" class="welcome-section pb-center-elements">
   <div class="letter" style="background-image: url(<?php echo $letter_background_sized ?>);">
     <img src="<?php echo $welcome_image_sized ?>" class="dentist-image" alt="<?php echo $welcome_image_alt ?>" title="<?php echo $welcome_image_title ?>" description="<?php echo $welcome_image_description ?>">
-    <?php echo $welcome_message ?>
+    <div class="letter__text">
+      <?php echo $welcome_message ?>
+    </div>
   </div>
 </section>
