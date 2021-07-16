@@ -17,6 +17,7 @@ get_header(); ?>
 <?php get_template_part('block-templates/parallax-section'); ?>
 <?php get_template_part('block-templates/about-us-section'); ?>
 <?php get_template_part('block-templates/contact-section'); ?>
+<?php get_template_part('block-templates/pop-up-section'); ?>
 
 
 <?php get_footer(); ?>
