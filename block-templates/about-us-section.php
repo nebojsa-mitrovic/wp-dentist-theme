@@ -46,7 +46,7 @@ $promises_icon_thumb_up_text = get_field('promises_icon_thumb_up_text');
 
 <section id="ueber-uns" class="container about-us">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-7">
       <h2 class="headline-underline"><?php echo $about_us_headline ?></h2>
 
       <div class="row about-us__dentist">
@@ -54,7 +54,7 @@ $promises_icon_thumb_up_text = get_field('promises_icon_thumb_up_text');
           <h3><?php echo $dentist_name ?></h3>
           <?php echo $dentist_text ?>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 pl-0">
           <img src="<?php echo $dentist_image_sized ?>" class="about-us-image" alt="<?php echo $dentist_image_alt ?>" title="<?php echo $dentist_image_title ?>" description="<?php echo $dentist_image_description ?>">
         </div>
       </div>
@@ -64,7 +64,7 @@ $promises_icon_thumb_up_text = get_field('promises_icon_thumb_up_text');
           <h3><?php echo $assistent_name ?></h3>
           <?php echo $assistent_text ?>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 pl-0">
           <img src="<?php echo $assistent_image_sized ?>" class="about-us-image" alt="<?php echo $assistent_image_alt ?>" title="<?php echo $assistent_image_title ?>" description="<?php echo $assistent_image_description ?>">
         </div>
       </div>
@@ -74,13 +74,13 @@ $promises_icon_thumb_up_text = get_field('promises_icon_thumb_up_text');
           <h3><?php echo $second_assistent_name ?></h3>
           <?php echo $second_assistent_text ?>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 pl-0">
           <img src="<?php echo $second_assistent_image_sized ?>" class="about-us-image" alt="<?php echo $second_assistent_image_alt ?>" title="<?php echo $second_assistent_image_title ?>" description="<?php echo $second_assistent_image_description ?>">
         </div>
       </div>
     </div>
 
-    <div class="col-md-6 about-us__promises">
+    <div class="col-md-5 about-us__promises">
       <h3><?php echo $promises_headline ?></h3>
 
       <div class="about-us__icons">

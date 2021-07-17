@@ -2,8 +2,20 @@
   display: grid;
   grid-template-columns: repeat(5, 5fr);
   gap: 1rem;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 15px;
+
+  @media only screen and (max-width: 1200px) {
+    grid-template-columns: repeat(4, 4fr);
+  }
+
+  @media only screen and (max-width: 992px) {
+    grid-template-columns: repeat(3, 3fr);
+  }
+
+  @media only screen and (max-width: 576px) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 15px;
+  }
 
   .box {
     text-align: center;
