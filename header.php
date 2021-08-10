@@ -46,18 +46,18 @@ $phone = get_field('phone');
     <div class="website-header">
       <div class="website-info-header website-info-header-top">
         <div class="row website-info-header-top__content">
-          <div class="col-md-3 pb-center-elements website-info-header-top__logo">
+          <div class="col-md-3 center-elements website-info-header-top__logo">
             <a href="<?php echo get_option("siteurl"); ?>">
               <img src="<?php echo $logo_sized ?>" class="img-responsive" alt="<?php echo $logo_alt ?>" title="<?php echo $logo_title ?>" description="<?php echo $logo_description ?>">
             </a>
           </div>
-          <div class="col-md-3 pb-center-elements">
+          <div class="col-md-3 center-elements">
             <p><i class="fas fa-map-marker-alt"></i><?php echo $address ?></p>
           </div>
-          <div class="col-md-3 pb-center-elements">
+          <div class="col-md-3 center-elements">
             <p><i class="fas fa-envelope"></i><a href="mailto:<?php echo $email ?>"><?php echo $email ?></a></p>
           </div>
-          <div class="col-md-3 pb-center-elements">
+          <div class="col-md-3 center-elements">
             <p><i class="fas fa-phone"></i><a href="tel:<?php echo $phone ?>"><?php echo $phone ?></a></p>
           </div>
         </div>

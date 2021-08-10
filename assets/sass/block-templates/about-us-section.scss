@@ -17,36 +17,23 @@
     }
   }
 
-  &__promises {
+  &__sayings {
     background-color: $white;
     color: $primary-color;
     border: 5px solid $primary-color;
-    padding: 80px 150px;
-
-    @media only screen and (max-width: 1200px) {
-      padding: 40px;
-    }
-
-    @media only screen and (max-width: 576px) {
-      margin: 15px;
-    }
-
-    h3 {
-      text-align: center;
-    }
-  }
-
-  &__icons {
-    margin-top: 60px;
     text-align: center;
 
-    h3,
-    p {
-      margin-top: 10px;
+    div {
+      margin: 30px 0
+    }
+
+    i {
+      font-size: 4em;
+      margin-bottom: 15px;
     }
 
     p {
-      font-size: 1.3em;
+      font-size: 1.6em;
     }
   }
 }

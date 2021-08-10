@@ -26,13 +26,13 @@ $footer_text = get_field('footer_text');
   <div class="footer__sub">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3 pb-center-elements">
+        <div class="col-sm-3 center-elements">
           <h3><?php echo $footer_about_us_headline ?></h3>
         </div>
-        <div class="col-sm-3 pb-center-elements">
+        <div class="col-sm-3 center-elements">
           <p><i class="fas fa-phone"></i><a href="tel:<?php echo $footer_about_us_phone ?>"><?php echo $footer_about_us_phone ?></a></p>
         </div>
-        <div class="col-sm-3 pb-center-elements">
+        <div class="col-sm-3 center-elements">
           <p><i class="fas fa-envelope"></i><a href="mailto:<?php echo $footer_about_us_email ?>"><?php echo $footer_about_us_email ?></a></p>
         </div>
         <div class="col-sm-3 footer__image">

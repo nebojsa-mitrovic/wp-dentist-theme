@@ -1,18 +1,18 @@
-.pb-bg-image {
+.bg-image {
   @include backgroundImg(cover);
 
-  .pb-headline {
+  .headline {
     color: $white;
   }
 }
 
-.pb-headline {
+.headline {
   text-align: center;
   padding: 1rem 0;
 }
 
 // Class that will position all elements center horizontaly and vertically
-.pb-center-elements {
+.center-elements {
   display: flex;
   flex-direction: column;
   justify-content: center;
