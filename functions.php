@@ -64,12 +64,10 @@ $sidebars = [];
  * automatically. `style.css` is NOT loaded since it's only used for WordPress.
  */
 $assets = [
+  'Header JS' => 'assets/js/header.js',
   'Main JS' => 'assets/js/index.js',
-  'Maps' => 'assets/js/maps.js',
-  'Back To Top JS' => 'assets/js/back-to-top.js',
   'Slick Slider JS' => 'assets/js/slick-slider.js',
-  'Sticky Slider JS' => 'assets/js/sticky-header.js',
-  'Header JS' => 'assets/js/header.js'
+  'Sticky Slider JS' => 'assets/js/sticky-header.js'
 ];
 
 

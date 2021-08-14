@@ -81,3 +81,5 @@ $footer_text = get_field('footer_text');
     </div>
   </div>
 </div>
+
+<?php wp_footer() ?>
