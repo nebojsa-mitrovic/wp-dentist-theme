@@ -21,7 +21,7 @@ $contact_form = get_field('contact_form');
       <div><?php echo $contact_data_opening_hours ?></div>
       <div class="contact__phone"><a href="tel:<?php echo $contact_data_phone ?>"><?php echo $contact_data_phone ?></a></div>
       <div class="contact__address"><?php echo $contact_data_address ?></div>
-      <div><a target="_blank" href="<?php echo $contact_data_google_map ?>">Anweisungen bekommen!</a></div>
+      <div><a target="_blank" href="<?php echo $contact_data_google_map ?>"><?php _e('So finden Sie zu uns', 'wp-dentist-theme'); ?>!</a></div>
     </div>
   </div>
 </section>

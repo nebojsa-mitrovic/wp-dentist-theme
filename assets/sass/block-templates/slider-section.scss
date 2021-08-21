@@ -1,7 +1,8 @@
 .slider {
   .slider-image {
-    height: 80vh;
+    height: 90vh;
     @include backgroundImg(cover);
+    background-position: top center;
   }
 
   .slick-dots li.slick-active button:before,
