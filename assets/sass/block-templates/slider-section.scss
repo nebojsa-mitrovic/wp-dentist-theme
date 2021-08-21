@@ -3,6 +3,10 @@
     height: 90vh;
     @include backgroundImg(cover);
     background-position: top center;
+
+    @include media-breakpoint-down(sm) {
+      height: 50vh;
+    }
   }
 
   .slick-dots li.slick-active button:before,

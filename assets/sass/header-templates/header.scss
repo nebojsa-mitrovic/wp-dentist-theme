@@ -79,7 +79,7 @@
 
   &.sticky {
     @include media-breakpoint-down(sm) {
-      height: 220px;
+      height: 180px;
     }
 
     img {
@@ -251,7 +251,7 @@
     top: $menu-sticky-height;
 
     @include media-breakpoint-down(sm) {
-      top: 220px;
+      top: 180px;
     }
 
     img {
