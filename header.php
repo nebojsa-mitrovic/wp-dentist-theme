@@ -71,11 +71,19 @@ $phone = get_field('phone');
             </button>
             <div class="collapse navbar-collapse" id="navbar">
               <?php
-              wp_nav_menu(array(
-                'theme_location'    => 'header-nav',
-                'depth'             => 1,
-                'menu_class'        => 'main-menu'
-              ));
+              if(is_front_page()) {
+                wp_nav_menu(array(
+                  'theme_location'    => 'header-nav',
+                  'depth'             => 1,
+                  'menu_class'        => 'main-menu'
+                ));
+              } else {
+                wp_nav_menu(array(
+                  'theme_location'    => 'page-nav',
+                  'depth'             => 1,
+                  'menu_class'        => 'main-menu'
+                ));
+              }
               ?>
             </div>
           </nav>
