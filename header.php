@@ -34,9 +34,9 @@ $phone = get_field('phone');
   <title><?php bloginfo('name');
           echo (' | ');
           bloginfo('description') ?></title>
-  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
-  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <?php if(!is_front_page()) { ?>
+            <meta name="robots" content="noindex">
+            <?php } ?>
   <?php wp_head(); ?>
 </head>
 
